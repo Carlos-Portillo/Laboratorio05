@@ -9,7 +9,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/new_title_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/medium_gap"
@@ -29,10 +29,10 @@
         android:hint="Name"
         android:textColorHint="@color/white"
         android:background="@color/cardLayout"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/new_title_text_view"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintStart_toStartOf="@+id/new_title_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/new_title_text_view">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/name_value"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/name_input_layout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_value2"
+            android:id="@+id/category_value"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/name_input_layout2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_value3"
+            android:id="@+id/description_value"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -96,14 +96,14 @@
         app:layout_constraintTop_toBottomOf="@+id/name_input_layout3">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_value4"
+            android:id="@+id/calification_value"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="submit"
