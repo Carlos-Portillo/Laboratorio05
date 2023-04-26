@@ -1,0 +1,6 @@
+Respuesta pregunta 1.
+R/ Separa la capa de datos del resto de la aplicación. La capa hace referencia a la parte
+donde se controlan los datos y la lógica empresarial
+
+Respuesta pregunta 2.
+Es un contenedor de estado a nivel de pantalla que expone la IU y contiene la lógica empresarial

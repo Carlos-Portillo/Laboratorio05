@@ -1,13 +1,13 @@
-package com.diegoarias.laboratorio05portillo
+package com.diegoarias.laboratorio05portillo.ui.movie
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
+import com.diegoarias.laboratorio05portillo.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
