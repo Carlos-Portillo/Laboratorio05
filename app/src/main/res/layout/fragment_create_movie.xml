@@ -4,12 +4,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.movie.CreateMovieFragment">
+    tools:context=".ui.movie.newmovie.CreateMovieFragment">
 
     <data>
         <variable
             name="viewmodel"
-            type="com.diegoarias.laboratorio05portillo.ui.movie.MovieViewModel" />
+            type="com.diegoarias.laboratorio05portillo.ui.movie.viewmodel.MovieViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

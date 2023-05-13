@@ -3,12 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.movie.BillboardFragment">
+    tools:context=".ui.movie.billboard.BillboardFragment">
 
     <data>
         <variable
             name="viewmodel"
-            type="com.diegoarias.laboratorio05portillo.ui.movie.BillboardFragment" />
+            type="com.diegoarias.laboratorio05portillo.ui.movie.billboard.BillboardFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -45,68 +45,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/movie_card_view"
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_marginStart="@dimen/medium_gap"
-        android:layout_marginTop="@dimen/big_gap"
-        android:layout_marginEnd="@dimen/medium_gap"
-        android:backgroundTint="@color/cardLayout"
-        app:cardCornerRadius="@dimen/medium_gap"
-        app:layout_constraintEnd_toEndOf="@+id/new_title_text_view"
-        app:layout_constraintStart_toStartOf="@+id/new_title_text_view"
-        app:layout_constraintTop_toBottomOf="@+id/new_title_text_view" >
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBaseline_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_title_text_view" />
 
 
-            <ImageView
-                android:id="@+id/harry_potter_image_view"
-                android:layout_width="125dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/small_gap"
-                android:src="@drawable/harry_potter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/movie_name_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/small_gap"
-                android:text="@string/movie_name"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/harry_potter_image_view"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/calification_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="9.8"
-                android:textColor="@color/calification"
-                android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/harry_potter_image_view"
-                app:layout_constraintTop_toBottomOf="@+id/movie_name_text_view"
-                app:layout_constraintVertical_bias="0.272" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

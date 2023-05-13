@@ -1,7 +1,8 @@
-package com.diegoarias.laboratorio05portillo.ui.movie
+package com.diegoarias.laboratorio05portillo.ui.movie.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
@@ -58,10 +59,17 @@ class MovieViewModel(private val repository: MovieRepository) : ViewModel() {
         qualification.value = ""
     }
 
+    fun setSelectedMovie(movie: MovieModel) {
+        name.value = movie.name
+        category.value = movie.category
+        description.value = movie.description
+        qualification.value = movie.qualification
+    }
+
     companion object {
         val Factory = viewModelFactory {
             initializer {
-                val app = this[APPLICATION_KEY] as MovieReviewerApplication
+                val app = this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as MovieReviewerApplication
                 MovieViewModel(app.movieRepository)
             }
         }
